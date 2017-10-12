@@ -1,0 +1,7 @@
+mmi==0.1.19
+bokeh==0.12.7
+ipywidgets==5.2.2
+matplotlib==1.5.1
+IPython==5.1.0
+ipywidgets==5.2.2
+widgetsnbextension==1.2.6
