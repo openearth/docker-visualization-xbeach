@@ -12,3 +12,5 @@ RUN pip install -r requirements.txt && \
 	jupyter nbextension enable --py widgetsnbextension
 
 USER $NB_USER
+
+# test
