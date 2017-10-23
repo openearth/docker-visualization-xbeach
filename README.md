@@ -1,8 +1,9 @@
 # Table of Contents
 1. [What is docker-visualization-xbeach](#what)
 2. [How to use this image?](#how)
-  1. [Run docker-visualization-xbeach with seperate xbeach-mi example] (#how1)
-  2. [Run docker-compose example] (#how2)
+  1. [Run docker-visualization-xbeach with seperate xbeach-mi example](#how1)
+  2. [Run docker-compose example](#how2)
+  
 ## What is docker-visualization-xbeach <a name="what"/>
 This image is used to create a visualization of an running xbeach model. The visualization is made using a [Jupyter][1] notebook. In the notebook the package [mmi-python ][2] is used to make a connection with a running xbeach model. With this connection data from the model is loaded into the notebook, including water depth (zs [m]), bed level (zb [m]) and wave height (H[m]). For each interaction with the model these parameters are retrieved and the timestep and saved internally. These values are visaulized in an interactive [bokeh][3] plot (see [Figure 1][fig1]) and controlled by a time Slider based on the [ipywidgets interactive module][1.4]. 
 
