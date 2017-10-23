@@ -1,0 +1,14 @@
+version: "3"
+services:
+  xbeach-vis:
+    image: deltares/docker-visualization-xbeach
+    depends_on:
+      - xbeach-run
+    ports:
+      - "8888:8888"
+  xbeach-run:
+    image: deltares/xbeach
+    volumes:
+      - ./stat/:/data
+    command: mmi-runner xbeach params.txt --port 53606
+
