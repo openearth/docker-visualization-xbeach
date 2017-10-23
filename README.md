@@ -1,7 +1,14 @@
-# docker-visualization-xbeach
-Docker container to visualize xbeach model results.
+## What is docker-visualization-xbeach
+This image is used to create a visualization of an running xbeach model. The visualization is made using a [Jupyter][1] notebook. In the notebook the package [mmi-python ][2] is used to make a connection with a running xbeach model. With this connection data from the model is loaded into the notebook, including water depth (zs [m]), bed level (zb [m]) and wave height (H[m]). For each interaction with the model these parameters are retrieved and the timestep and saved internally. These values are visaulized in an interactive [bokeh][3] plot
 
-## Run docker-compose example:
+![alt text][fig1]
+
+[fig1]: ./figures/example.png
+[1]:http://jupyter.org/
+[2]:https://github.com/openearth/mmi-python
+[3]:https://bokeh.pydata.org/en/latest/
+## How to use this image? 
+# Run docker-compose example:
 When working on windows, be sure to save the folder on a drive that is available to your containers. 
 Shared drives can be enabled in the settings.
 
@@ -30,3 +37,4 @@ When working on Windows this link might not work and therefore instead of using 
 The new link should include this ip adress and will look something like this: 
 
 ```192.168.99.100:8888/?token=a38c9a5b4f5a16476b49b09b76ea0f8d13323222a995207c ```
+
